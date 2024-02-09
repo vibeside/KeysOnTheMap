@@ -38,6 +38,7 @@ namespace KeysOnTheMap
                     KeyIcon.layer = StartOfRound.Instance.itemRadarIconPrefab.layer;
                     KeyIcon.name = "keyicon :3";
                     KeyIcon.AddComponent<KeepUpwards>();
+                    self.radarIcon = KeyIcon.transform;
                 } 
                 //self.radarIcon = Instantiate(StartOfRound.Instance.itemRadarIconPrefab, RoundManager.Instance.mapPropsContainer.transform).transform;
                 original(self);
